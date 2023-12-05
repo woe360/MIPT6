@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="ForexNest"
+        android:textSize="34dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/currencyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="1dp"
+        android:hint="Enter currency code, ex: USD" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/currencyEditText"
+        android:layout_marginTop="-10dp" />
+
+
+</RelativeLayout>
